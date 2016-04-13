@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Doc">
+  <DataContextMoniker Name="/DocDataContext" />
+  <nestedChildShapes>
+    <classShape Id="cfb77363-90e4-47f0-90e4-407a23a4e665" absoluteBounds="3.75, 0.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/DocDataContext/tblDocument" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aca380d1-600a-4f2f-8a3d-61d829237a6f" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bbbcf6de-dfb9-4878-ab59-a3c52dabec91" absoluteBounds="0.75, 4.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DocDataContext/tblSubDocument" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c54946d5-aad3-443c-9f96-dff7dd4d4539" absoluteBounds="0.765, 5.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d763733f-5123-46db-b97c-e956ca8faa90" absoluteBounds="4.75, 3.875, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/DocDataContext/tblDocTrack" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e1659ecb-2a26-418c-9823-fd2e3899abb2" absoluteBounds="4.765, 4.335, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

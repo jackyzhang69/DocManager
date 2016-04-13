@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Document" Class="DocDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=GS-W020\sqlexpress;Initial Catalog=Document;User ID=sa" SettingsObjectName="DocMgr.Properties.Settings" SettingsPropertyName="DocumentConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tblDocument" Member="tblDocuments">
+    <Type Name="tblDocument">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ApplicationId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DocCategory" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="DocNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DocName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="DocFormat" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DocOwner" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblSubDocument" Member="tblSubDocuments">
+    <Type Name="tblSubDocument">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DocumentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DocName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblDocTrack" Member="tblDocTracks">
+    <Type Name="tblDocTrack">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ApplicationId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DocumentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubDocumentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RequstDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ReceivedDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Issues" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="DocStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
